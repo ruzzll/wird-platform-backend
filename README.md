@@ -46,10 +46,15 @@ docker-compose up
 ```
 
 ### 3. Uso de la API REST
-Endpoint
+Ejemplo de como se debe usar el Endpoint
 
 ```
 GET http://localhost:8080/weather/{location}
+
+GET http://localhost:8080/weather/Santiago (CL)
+GET http://localhost:8080/weather/Zúrich (CH)
+GET http://localhost:8080/weather/Auckland (NZ)
+...
 ```
 
 ### 4. Manejo de Errores
@@ -59,6 +64,6 @@ GET http://localhost:8080/weather/{location}
 ### 5. Registro de Errores
 Los errores se almacenan en una lista en Redis. Cada error incluye el mensaje de error y el timestamp.
 
-### 4. Contribuciones
+### 6. Contribuciones
 Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request para sugerir mejoras.
 
